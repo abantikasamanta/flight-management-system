@@ -1,0 +1,31 @@
+[
+    {
+      "title": "Sales",
+      "value": "$40,00,000",
+      "icon": "mdi-currency-usd",
+      "color": "purple",
+      "percentage": "+20.00%"
+    },
+    {
+      "title": "Scheduled Flights",
+      "value": "50",
+      "icon": "mdi-clock-outline",
+      "color": "green",
+      "percentage": "+20.00%"
+    },
+    {
+      "title": "Active Flights",
+      "value": "20",
+      "icon": "mdi-airplane",
+      "color": "blue",
+      "percentage": "+20.00%"
+    },
+    {
+      "title": "Total Bookings",
+      "value": "450",
+      "icon": "mdi-ticket-confirmation",
+      "color": "yellow",
+      "percentage": "+20.00%"
+    }
+  ]
+  
