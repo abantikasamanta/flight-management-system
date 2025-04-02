@@ -5,9 +5,12 @@
 
     <!-- Right Main Content -->
     <v-main>
-      <v-container fluid>
+      <TopBar></TopBar>
+      <v-container fluid class="right-content">
         <v-row>
-          <RightContent style="width: 100% !important"></RightContent>
+          <!-- <DashboardContainer style="width: 100% !important"></DashboardContainer> -->
+          <FlightsContainer style="width: 100% !important"></FlightsContainer>
+
         </v-row>
       </v-container>
     </v-main>
@@ -15,16 +18,20 @@
 </template>
 
 <script>
+import TopBar from "./TopBar.vue";
 import LeftMenu from "./LeftMenu.vue";
-import RightContent from "./RightContent.vue";
+// import DashboardContainer from "./Dashboard/DashboardContainer.vue";
+import FlightsContainer from "./Flights/FlightsContainer.vue"
 export default {
   name: "EmptyContainer",
   data() {
     return {};
   },
   components: {
+    TopBar,
     LeftMenu,
-    RightContent,
+    // DashboardContainer,
+    FlightsContainer
   },
 };
 </script>
@@ -34,5 +41,9 @@ export default {
   font-weight: bold;
   font-size: 20px;
   padding: 16px;
+}
+
+.right-content {
+  background-color: rgb(239, 245, 245);
 }
 </style>

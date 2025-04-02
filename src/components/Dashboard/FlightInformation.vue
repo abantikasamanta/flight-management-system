@@ -5,7 +5,7 @@
     </v-card-title>
 
     <v-card-text class="text--primary">
-        <v-card class="mx-auto mt-4" max-width="100%" height="350"></v-card>
+        <v-card class="mx-auto mt-4" max-width="100%" height="250"></v-card>
     </v-card-text>
   </v-card>
 </template>

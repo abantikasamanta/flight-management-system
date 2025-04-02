@@ -1,5 +1,5 @@
 <template>
-  <v-card class="sales-card" elevation="4" :style="{ background: data.color }">
+  <v-card class="sales-card pr-2" elevation="4" :style="{ background: data.color }">
     <v-row align="center">
       <!-- Icon -->
       <v-col cols="2">
@@ -50,7 +50,7 @@ export default {
 
 <style scoped>
 .sales-card {
-  width: 368px;
+  width: 100%;
   height: 168px;
   border-radius: 12px;
   color: white;

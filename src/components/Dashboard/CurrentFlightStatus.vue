@@ -1,6 +1,6 @@
 <template>
-  <v-container class="pa-0">
-    <v-card>
+  <v-container class="pa-0" style="height: 100%">
+    <v-card style="height: 100%">
       <v-card-title>
         <span class="card-heading">Current Flight Status</span>
         <v-spacer></v-spacer>
