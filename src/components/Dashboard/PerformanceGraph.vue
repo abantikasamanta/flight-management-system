@@ -1,5 +1,4 @@
 <template>
-  <v-container class="pa-0">
     <v-card>
       <v-card-title class="font-weight-bold cart"
         >Performance
@@ -27,7 +26,6 @@
         </v-col>
       </v-row>
     </v-card>
-  </v-container>
 </template>
 
 <script>
