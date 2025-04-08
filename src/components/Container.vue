@@ -1,17 +1,12 @@
 <template>
   <v-app>
-    <!-- Left Sidebar -->
-    <LeftMenu></LeftMenu>
+    <left-menu></left-menu>
 
-    <!-- Right Main Content -->
+    <top-bar></top-bar>
     <v-main>
-      <TopBar></TopBar>
-      <v-container fluid class="right-content">
-        <v-row>
-          <!-- <DashboardContainer style="width: 100% !important"></DashboardContainer> -->
-          <FlightsContainer style="width: 100% !important"></FlightsContainer>
-
-        </v-row>
+      <v-container fluid class="pa-0">
+        <!-- <router-view></router-view> -->
+        <DashboardContainerVue></DashboardContainerVue>
       </v-container>
     </v-main>
   </v-app>
@@ -20,30 +15,26 @@
 <script>
 import TopBar from "./TopBar.vue";
 import LeftMenu from "./LeftMenu.vue";
-// import DashboardContainer from "./Dashboard/DashboardContainer.vue";
-import FlightsContainer from "./Flights/FlightsContainer.vue"
+import DashboardContainerVue from './Dashboard/DashboardContainer.vue';
+
 export default {
   name: "EmptyContainer",
-  data() {
-    return {};
-  },
   components: {
     TopBar,
     LeftMenu,
-    // DashboardContainer,
-    FlightsContainer
+    DashboardContainerVue
   },
 };
 </script>
 
 <style scoped>
-.title {
-  font-weight: bold;
-  font-size: 20px;
-  padding: 16px;
+.left-menu {
+  width: 250px; /* Adjust width as needed */
 }
 
-.right-content {
-  background-color: rgb(239, 245, 245);
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 </style>

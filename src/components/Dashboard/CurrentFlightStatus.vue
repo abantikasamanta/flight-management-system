@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-0" style="height: 100%">
+  <div class="pa-0" style="height: 100%">
     <v-card style="height: 100%">
       <v-card-title>
         <span class="card-heading">Current Flight Status</span>
@@ -40,7 +40,7 @@
         </template>
       </v-data-table>
     </v-card>
-  </v-container>
+  </div>
 </template>
 
 <script>

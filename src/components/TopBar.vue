@@ -1,6 +1,5 @@
 <template>
-  <div class="topbarcontainer">
-    <v-app-bar app color="white" flat>
+    <v-app-bar app color="white">
       <!-- Title -->
       <v-toolbar-title class="font-weight-bold">Dashboard</v-toolbar-title>
 
@@ -33,7 +32,6 @@
 
       <v-icon class="mr-4">mdi-chevron-down</v-icon>
     </v-app-bar>
-  </div>
 </template>
 
 <script>

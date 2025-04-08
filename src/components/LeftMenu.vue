@@ -1,12 +1,11 @@
 <template>
-  <div>
-    <v-navigation-drawer app>
-      <div class="ma-4"> 
+    <v-navigation-drawer app hide-overlay>
+      <div class="ma-4">
         <v-icon size="32">mdi-airplane</v-icon>
         <span class="ml-2">FLIGHTMS</span>
       </div>
       <v-list dense>
-        <v-list-item v-for="(item, i) in menuItems" :key="i" link>
+        <v-list-item v-for="(item, i) in menuItems" :key="i" link @click="navigateTo(item.link)">
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -16,7 +15,6 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-  </div>
 </template>
 <script>
 export default {
@@ -27,8 +25,8 @@ export default {
   data() {
     return {
       menuItems: [
-        { text: "Dashboard", icon: "mdi-view-dashboard" },
-        { text: "Flights", icon: "mdi-airplane" },
+        { text: "Dashboard", icon: "mdi-view-dashboard",link: '/dashboard' },
+        { text: "Flights", icon: "mdi-airplane",link: '/flights' },
         { text: "Bookings", icon: "mdi-book" },
         { text: "Staff", icon: "mdi-account" },
         { text: "Help Desk", icon: "mdi-help-circle" },
@@ -41,7 +39,11 @@ export default {
   computed: {},
   watch: {},
   mounted() {},
-  methods: {},
+  methods: {
+    navigateTo(route) {
+      this.$router.replace(route);
+    },
+  },
 };
 </script>
 <style lang="" scoped></style>
